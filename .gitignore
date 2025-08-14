@@ -1,8 +1,9 @@
-# Gradle files
+# Gradle caches
 .gradle/
 build/
+*/build/   # build folders inside modules (e.g., app/build/)
 
-# Local configuration files (not meant for Git)
+# Local configuration (contains machine-specific paths)
 local.properties
 
 # IDE files
@@ -12,6 +13,11 @@ local.properties
 # Log files
 *.log
 
-# Generated files
+# Generated captures / screenshots
 captures/
+
+# Output folders
 outputs/
+
+# Misc Android Studio temp files
+.navigation/
