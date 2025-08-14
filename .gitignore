@@ -1,0 +1,17 @@
+# Gradle files
+.gradle/
+build/
+
+# Local configuration files (not meant for Git)
+local.properties
+
+# IDE files
+.idea/
+*.iml
+
+# Log files
+*.log
+
+# Generated files
+captures/
+outputs/
