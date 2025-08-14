@@ -3,6 +3,9 @@
 build/
 */build/   # build folders inside modules (e.g., app/build/)
 
+# Local configuration (contains machine-specific paths)
+local.properties
+
 # IDE files
 .idea/
 *.iml
