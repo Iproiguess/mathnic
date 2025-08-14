@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Mathnic</string>
+
+    <!-- Content Descriptions for Images -->
+    <string name="background_image_description">Background image</string>
+    <string name="character_image_description">Title image</string>
+    <string name="button_graphic_content_description">Button background image</string>
+    <string name="scroll_button_description">Scroll down to explore further</string>
+
+    <!-- Text for Buttons -->
+    <string name="main_menu_title">.</string>
+    <string name="counting_button_text">COUNTING</string>
+    <string name="quit_button_text">Quit</string>
+    <string name="match_button_text">Match</string>
+    <string name="Sequence_button_text">Sequence</string>
+    <string name="fill_button_text">FILL</string>
+
+
+    <!-- Accessibility Descriptions for Buttons -->
+    <string name="counting_button_action_description">Scroll down to explore</string>
+    <string name="settings_button_action_description">Open application settings</string>
+    <string name="math">MATH</string>
+    <string name="nic">NIC</string>
+    <string name="back_button_text">back</string>
+    <string name="back_button_description">Back</string>
+    <string name="Result">Result Sign\n</string>
+    <string name="answer_option_1">option1\n</string>
+    <string name="answer_option_2">option2</string>
+    <string name="answer_option_3">option3\n</string>
+    <string name="game_over_text">END</string>
+</resources>

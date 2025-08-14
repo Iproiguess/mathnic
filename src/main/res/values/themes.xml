@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Mathnic" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+
+    </style>
+
+    <style name="Theme.Mathnic.FullScreen" parent="Theme.Mathnic">
+        <item name="android:windowFullscreen">true</item>
+        <!-- You could add other specific attributes for this theme here -->
+        <!-- For example, if you wanted a different status bar color ONLY for this theme when not fullscreen -->
+        <!-- <item name="android:statusBarColor" tools:targetApi="l">@color/some_other_color</item> -->
+    </style>
+
+
+    <style name="Theme.Mathnic" parent="Base.Theme.Mathnic" />
+</resources>

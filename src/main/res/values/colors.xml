@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="bark_brown_dark">#8B4513</color>
+    <color name="bark_brown_medium">#A0522D</color>
+    <color name="bark_tan">#CD853F</color>
+    <color name="off_white_text">#F5F5F5</color>
+    <color name="shadow_color_dark">#403A2B0F</color>
+    <color name="green">#00FF00</color>
+</resources>

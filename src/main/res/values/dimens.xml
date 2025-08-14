@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Font sizes -->
+    <dimen name="font_size_title">40sp</dimen>
+    <dimen name="font_size_button">22sp</dimen>
+    <dimen name="font_size_subtitle">28sp</dimen>
+    <dimen name="font_size_body">16sp</dimen>
+</resources>

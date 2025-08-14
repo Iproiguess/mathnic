@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ui_content_layer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/backgroundImageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/tree_with_ground3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <ImageView
+        android:id="@+id/characterImageView"
+        android:layout_width="172dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="60dp"
+        android:contentDescription="@string/main_menu_title"
+        android:src="@drawable/title_sign"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/titleMathTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:elevation="2dp"
+        android:fontFamily="@font/fredoka_expanded_semibold"
+        android:shadowColor="@color/shadow_color_dark"
+        android:shadowDx="2"
+        android:shadowDy="3"
+        android:shadowRadius="2.5"
+        android:text="@string/math"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="37sp"
+        app:layout_constraintStart_toStartOf="@id/characterImageView"
+        app:layout_constraintTop_toTopOf="@id/characterImageView" />
+
+    <TextView
+        android:id="@+id/titleNicTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="20dp"
+        android:elevation="2dp"
+        android:fontFamily="@font/fredoka_expanded_semibold"
+        android:shadowColor="@color/shadow_color_dark"
+        android:shadowDx="2"
+        android:shadowDy="3"
+        android:shadowRadius="2.5"
+        android:text="@string/nic"
+        android:textColor="@color/bark_tan"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@id/characterImageView"
+        app:layout_constraintEnd_toEndOf="@id/characterImageView" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/countingButtonContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@+id/characterImageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackground"
+        android:contentDescription="@string/counting_button_text"
+        android:elevation="4dp">
+
+        <ImageView
+            android:id="@+id/countingButtonImageItself"
+            android:layout_width="190dp"
+            android:layout_height="80dp"
+            android:src="@drawable/mainmenubutton"
+            android:scaleType="fitXY"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:id="@+id/countingButtonTextView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:fontFamily="@font/nunito_sans_black"
+            android:gravity="center"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="@string/counting_button_text"
+            android:textAllCaps="true"
+            android:textColor="@android:color/holo_orange_light"
+            android:textSize="31sp"
+            app:layout_constraintBottom_toBottomOf="@id/countingButtonImageItself"
+            app:layout_constraintEnd_toEndOf="@id/countingButtonImageItself"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/countingButtonImageItself"
+            app:layout_constraintTop_toTopOf="@id/countingButtonImageItself"
+            app:layout_constraintVertical_bias="0.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/newButtonsContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toBottomOf="@id/countingButtonContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp">
+
+        <!-- MATCH -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/matchButtonContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="@string/match_button_text"
+            android:elevation="4dp">
+
+            <ImageView
+                android:id="@+id/matchButtonImageItself"
+                android:layout_width="190dp"
+                android:layout_height="80dp"
+                android:src="@drawable/mainmenubutton"
+                android:scaleType="fitXY"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:contentDescription="@null" />
+
+            <TextView
+                android:id="@+id/matchButtonTextView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:text="@string/match_button_text"
+                android:fontFamily="@font/nunito_sans_black"
+                android:gravity="center"
+                android:textColor="@android:color/holo_orange_light"
+                android:textSize="45sp"
+                android:textAllCaps="true"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                app:layout_constraintTop_toTopOf="@id/matchButtonImageItself"
+                app:layout_constraintBottom_toBottomOf="@id/matchButtonImageItself"
+                app:layout_constraintStart_toStartOf="@id/matchButtonImageItself"
+                app:layout_constraintEnd_toEndOf="@id/matchButtonImageItself"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- FILL-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/fillButtonContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="@string/fill_button_text"
+            android:elevation="4dp">
+
+            <ImageView
+                android:id="@+id/fillButtonImageItself"
+                android:layout_width="190dp"
+                android:layout_height="80dp"
+                android:src="@drawable/mainmenubutton"
+                android:scaleType="fitXY"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:contentDescription="@null" />
+
+            <TextView
+                android:id="@+id/fillButtonTextView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:text="@string/fill_button_text"
+                android:fontFamily="@font/nunito_sans_black"
+                android:gravity="center"
+                android:textColor="@android:color/holo_orange_light"
+                android:textSize="45sp"
+                android:textAllCaps="true"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                app:layout_constraintTop_toTopOf="@id/fillButtonImageItself"
+                app:layout_constraintBottom_toBottomOf="@id/fillButtonImageItself"
+                app:layout_constraintStart_toStartOf="@id/fillButtonImageItself"
+                app:layout_constraintEnd_toEndOf="@id/fillButtonImageItself"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- QUIT -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/quitButtonContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="@string/quit_button_text"
+            android:elevation="4dp">
+
+            <ImageView
+                android:id="@+id/quitButtonImageItself"
+                android:layout_width="190dp"
+                android:layout_height="80dp"
+                android:src="@drawable/mainmenubutton"
+                android:scaleType="fitXY"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:contentDescription="@null" />
+
+            <TextView
+                android:id="@+id/quitButtonTextView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:text="@string/quit_button_text"
+                android:fontFamily="@font/nunito_sans_black"
+                android:gravity="center"
+                android:textColor="@android:color/holo_orange_light"
+                android:textSize="40sp"
+                android:textAllCaps="true"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                app:layout_constraintTop_toTopOf="@id/quitButtonImageItself"
+                app:layout_constraintBottom_toBottomOf="@id/quitButtonImageItself"
+                app:layout_constraintStart_toStartOf="@id/quitButtonImageItself"
+                app:layout_constraintEnd_toEndOf="@id/quitButtonImageItself"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
