@@ -161,7 +161,7 @@
                 android:layout_height="50dp"
                 android:fontFamily="@font/fredoka_expanded_semibold"
                 android:gravity="center"
-                android:textColor="@android:color/holo_orange_light"
+                android:textColor="@android:color/holo_orange_dark"
                 android:textSize="34sp"
                 android:paddingBottom="5dp"
                 app:layout_constraintBottom_toBottomOf="@id/answerButtonImage1"
